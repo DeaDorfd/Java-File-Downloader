@@ -84,8 +84,8 @@ public class Downloader extends JFrame {
 				if (isSuccess) {
 					stringurl.setText(null);
 					int i = JOptionPane.showConfirmDialog(null,
-							"Die Datei wurde erfolgreich runtergeladen! \n Möchtest du diese auch öffnen?",
-							"Erfolgreich", JOptionPane.YES_NO_OPTION);
+							"The file was downloaded successfully! \nDo you want to open them too?", "successfully",
+							JOptionPane.YES_NO_OPTION);
 					if (i == 0) {
 						try {
 							Desktop.getDesktop().open(new File(Utils.downloadedfilename));
